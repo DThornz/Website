@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<html lang="en">
+{% include portfolio_head.html %}
+<body>
+  <div id="content">
+    {% include portfolio_header.html %}
+    <section id="about">
+      {% include portfolio_about.html %}
+    </section>
+    {{ content }}
+
+    {% include portfolio_contact_formspree.html %}
+    {% include portfolio_footer.html %}
+  </div>
+</body>
+
+</html>

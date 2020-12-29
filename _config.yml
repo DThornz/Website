@@ -106,6 +106,16 @@ email: "me@daviddarnes.com"
 # service_worker: false # Will turn off the service worker if set to false
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
+
+# User settings
+username: Asad Mirza
+user_description: My work primarily deals with computational fluid dynamics (CFD), finite element analysis (FEA), 3D computer aided design (CAD), as well as Python and MATLAB programming.
+user_title: PhD Candidate - Biomedical Engineering
+email: asadmirza33165@gmail.com
+# twitter_username: lorem_ipsum
+github_username:  DThornz
+
+
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
   16: '/assets/logos/logo@16px.png'
