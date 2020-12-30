@@ -57,7 +57,7 @@ sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+timezone: America/New_York # Timezone for blog posts and alike
 
 # 5. Collections
 collections:
@@ -105,7 +105,7 @@ disqus: "amirza" # Blog post comments, uncomment the option and set the site ID 
 css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
 
-# User settings
+# User settings for Portfolio
 username: Asad Mirza
 user_description: My work primarily deals with computational fluid dynamics (CFD), finite element analysis (FEA), 3D computer aided design (CAD), as well as Python and MATLAB programming.
 user_title: PhD Candidate - Biomedical Engineering
