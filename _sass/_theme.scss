@@ -81,17 +81,17 @@ body {
 
 .small {
   padding-top: .8rem;
-  color: $captionColour;
+  color: $footerTextColor;
   display: inline-block;
 }
 
 .footer {
-  background: $headingColour;
+  background: $footerColor;
   color: $captionColour;
   a {
-    color: $captionColour;
+    color: $footerTextColor;
     &:hover {
-      color: $backgroundColour;
+      color: $hoverColour;
     }
   }
   .container {
