@@ -127,18 +127,18 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 
 # 9. Site navigation
 navigation_header:
-- title: Home
+- title: -Home-
   url: /
-- title: Elements
+- title: -Elements-
   url: /elements/
-- title: Blog
+- title: -Blog-
   url: /blog/
-- title: Categories
+- title: -Categories-
   url: /categories/
-- title: Search
+- title: -Search-
   url: /search/
-- title: Portfolio
-  url: /portfolio/
+- title: -About Me-
+  url: /about_me/
 
 navigation_footer:
 - title: Created by Asad Mirza based upon theme by David Darnes
