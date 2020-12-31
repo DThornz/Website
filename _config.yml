@@ -139,6 +139,8 @@ navigation_header:
   url: /search/
 - title: -About Me-
   url: /about_me/
+- title: -CV-
+  url: https://dthornz.github.io/CV/
 
 navigation_footer:
 - title: Created by Asad Mirza based upon theme by David Darnes
