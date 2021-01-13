@@ -44,7 +44,7 @@ feature_image: "https://picsum.photos/2560/600?image=872"
         a. Open up the DUO Mobile application on your phone, the code shown is the one 
              that should be used here.
 
-{% include figure.html image="\assets\imgs\Fluent_Tut\Slide5.PNG" caption="" width="800" height="360" %}
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide5.JPEG" caption="" width="800" height="360" %}
 
 - ### Accessing Computer
 
