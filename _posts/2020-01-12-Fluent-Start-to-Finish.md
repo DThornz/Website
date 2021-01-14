@@ -99,3 +99,32 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
 {% include figure.html image="\assets\imgs\Fluent_Tut\Slide10.jpg" caption="" width="800" height="360" %}
 ---------------------------------------------------------------------------
+
+## Selecting and Assigning Faces for Boundary Conditions
+
+- ### Moving around work window (camera controls and important selection tools)
+
+  - ##### Scroll wheel – Zoom in/out
+  - ##### Shift + Scroll Wheel - Gradual zoom in/out
+  - ##### Middle click + Drag - Rotates around the point that was clicked in any direction.
+  - ##### Middle click + Drag - Rotates around thiv.	Ctrl + Middle click + Drag – Move the object around the window without changing viewpointe point that was clicked in any direction.
+
+- ### Assigning Face for Inlet
+
+  - ##### Select the green "Face" selection option
+  - ##### Left click the planar face chosen as the inlet, hold Ctrl while left clicking to select more than one face if required.
+  - ##### Right click and select "Create Named Selection"
+    -###### Type in a name into the field, a suggestion is “Inlet” as ANSYS will recognize this name as an inlet boundary face and auto setup parts later in Fluent to save us time.
+
+- ### Assigning Face(s) for Outlet
+
+  - ##### Repeat the same steps as above but assign the name of “Outlet” instead.
+  - ##### If you wish to apply a different outlet boundary condition to each face then name them separately, such as “Outlet-1”, “Outlet-2”, etc.
+
+- ### Assigning Faces for Wall
+
+  - ##### Press Ctrl + A to select all faces
+  - ##### Press Ctrl + Left click to deselect the faces that were either Inlet or Outlet.
+  - ##### Create a Named Selection as you did above but name it "Wall"
+
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide12.jpg" caption="" width="800" height="360" %}
