@@ -66,7 +66,11 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
         ​		https://eic.fiu.edu/change-network-password/
 
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide6.jpg" caption="" width="800" height="360" %}
+
    -   ##### Click the Start Menu and search up "Workbench" and double click "Workbench 2019 R2", or whichever version you see, to start up the program.
+
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide7.jpg" caption="" width="800" height="360" %}
 
 - ### Transferring Files
 
@@ -74,6 +78,7 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
   -  ##### On the lab computer right click and “Paste” wherever you want the file or folder to be.
 
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide8.jpg" caption="" width="800" height="360" %}
 ---------------------------------------------------------------------------
 
 ## Importing Cleaned CAD Model
@@ -92,4 +97,5 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
   - ##### Double click the "Mesh" node to open ANSYS Meshing, the geometry node should have a checkmark next to it prior to you doing this.
 
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide10.jpg" caption="" width="800" height="360" %}
 ---------------------------------------------------------------------------
