@@ -114,7 +114,7 @@ feature_image: "https://picsum.photos/2560/600?image=872"
   - ##### Select the green "Face" selection option
   - ##### Left click the planar face chosen as the inlet, hold Ctrl while left clicking to select more than one face if required.
   - ##### Right click and select "Create Named Selection"
-    -###### Type in a name into the field, a suggestion is “Inlet” as ANSYS will recognize this name as an inlet boundary face and auto setup parts later in Fluent to save us time.
+    - ###### Type in a name into the field, a suggestion is “Inlet” as ANSYS will recognize this name as an inlet boundary face and auto setup parts later in Fluent to save us time.
 
 - ### Assigning Face(s) for Outlet
 
