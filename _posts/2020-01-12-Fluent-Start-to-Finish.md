@@ -3,9 +3,14 @@ title: Guide for Conducting an ANSYS Fluent Simulation – From Start to Finish
 categories:
 - Fluent
 - ANSYS
-feature_image: "https://picsum.photos/2560/600?image=872"
+feature_image: "https://www.lss.ovgu.de/lss_media/Downloads/Forschung/Medizinsche+Str%C3%B6mungen/Medizinsche+Str%C3%B6mungen+3-height-333-width-593-p-1982.png"
 
 ---
+
+<center>
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/ANSYSFluentTut" target="_blank">Obtain the files for the below tutorial by clicking here, pay what you want! $0, $5, etc</a>
+</center>
 
 ## Accessing ANSYS through FIU VPN
 
