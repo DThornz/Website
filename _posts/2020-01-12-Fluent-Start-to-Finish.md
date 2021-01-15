@@ -9,8 +9,9 @@ feature_image: "https://www.lss.ovgu.de/lss_media/Downloads/Forschung/Medizinsch
 
 <center>
 <script src="https://gumroad.com/js/gumroad.js"></script>
-<a class="gumroad-button" href="https://gum.co/ANSYSFluentTut" target="_blank">Obtain the files for the below tutorial by clicking here, pay what you want! $0, $5, etc</a>
+<a class="gumroad-button" href="https://gum.co/ANSYSFluentTut" target="_blank">Obtain the files for the below tutorial by clicking here, pay what you want! $0, $5, etc </a>
 </center>
+
 
 ## Accessing ANSYS through FIU VPN
 
