@@ -7,8 +7,6 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
 ---
 
-<p align=center> ~Refer to the PowerPoint for accompanying pictures for each step~ </p>
-
 ## Accessing ANSYS through FIU VPN
 
 - ### Setting up FIU VPN
@@ -35,12 +33,12 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
   - ##### Login follows the following format:
 
-    1. Username: myFIU username
+    Username: myFIU username
        a. Ex: amirza
-     2. Password: myFIU password
+    Password: myFIU password
         a. If you forget your myFIU password reset your password here
           https://login.fiu.edu/account/recovery/ 
-     3. Second Password: DUO Mobile six-digit code
+    Second Password: DUO Mobile six-digit code
         a. Open up the DUO Mobile application on your phone, the code shown is the one 
              that should be used here.
 
@@ -58,11 +56,11 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
   -  ##### Your login info is the same as if you were on a lab PC at FIU but with a slight difference in the username:
 
-     1. Username: EICAD\yournovellusername
+     Username: EICAD\yournovellusername
 
-     2. Password: yournovellpassword
+     Password: yournovellpassword
 
-        ​	a. If you forget your Novell password, reset your password here 
+        ​	If you forget your Novell password, reset your password here 
 
         ​		https://eic.fiu.edu/change-network-password/
 
@@ -192,13 +190,13 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
 - ### Boundary Conditions
   - ###### Inlet - By default it is assumed to be a velocity condition, you have 3 options for how to set it
-    - 1 . Constant -  This uses a constant inlet velocity for the entirety of the simulation, a simple example would be 0.1 m/s.
-    - 2 . Expression -  This lets you write a more complex expression to put at the inlet condition.
+    - Constant -  This uses a constant inlet velocity for the entirety of the simulation, a simple example would be 0.1 m/s.
+    - Expression -  This lets you write a more complex expression to put at the inlet condition.
       - Ex:  IF(t<0.333[s],0.1[m/s]*sin(9.424*t/1[s]) ,0[m/s])
        
       - This is an IF statement that says “If the simulation time is less than 0.  333 seconds have the inlet velocity be defined by 0.1[m/s]*sin(9.424*t/1[s]) otherwise (meaning the time is greater than 0.333 seconds) let the velocity be 0 [m/s]
-    - 3 . Custom - This lets you prescribe your unique inlet condition that cannot be easily defined with an expression, such as from a text or CSV file.
-      - a. A custom inlet velocity condition can be written to a text file with the following format:
+    - Custom - This lets you prescribe your unique inlet condition that cannot be easily defined with an expression, such as from a text or CSV file.
+      - A custom inlet velocity condition can be written to a text file with the following format:
 
 
               ((profilename transient n periodic)
@@ -215,14 +213,14 @@ feature_image: "https://picsum.photos/2560/600?image=872"
               )
 
 
-        - i. Profilename - General name for the profile, can be anything.
-        - ii. Transient - Tell Fluent this is a transient profile
-        - iii. N - Number of points, in the above example 3
-        - iv.  Periodic -  Marker for if the waveform is periodic, can be either 0 or 1 for yes or no.
-      - b. Once the profile has been made and saved as a text file go to File → Read → Profile
-      - c. Set File Types to All
-      - d. Locate the text file and click OK
-      - e. Go to the Inlet boundary condition velocity box and there should now be an option to select the profile you just read as the input with the name of “profilename vel”, ex: “Inlet_Velocity vel”
+        - Profilename - General name for the profile, can be anything.
+        - Transient - Tell Fluent this is a transient profile
+        - N - Number of points, in the above example 3
+        - Periodic -  Marker for if the waveform is periodic, can be either 0 or 1 for yes or no.
+      - Once the profile has been made and saved as a text file go to File → Read → Profile
+      - Set File Types to All
+      - Locate the text file and click OK
+      - Go to the Inlet boundary condition velocity box and there should now be an option to select the profile you just read as the input with the name of “profilename vel”, ex: “Inlet_Velocity vel”
 
 {% include figure.html image="\assets\imgs\Fluent_Tut\Slide22.jpg" caption="Constant" width="800" height="360" %}
 {% include figure.html image="\assets\imgs\Fluent_Tut\Slide23.jpg" caption="Expression" width="800" height="360" %}
@@ -253,18 +251,18 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 - ### Run Calculation
   - ###### Click Check Case and make sure a box saying “No recommendations to make at this time” shows up, if not address the suggestions given to you for a better simulation.
   - ###### Time Advancement
-    - 1. Type - Fixed
-    - 2. Parameters
-      - a. Number of Time Steps - 10
-      - b. Time Step Size(s) - 0.1
-        - i. Note: a x b = total time, so 10 x 0.1 =  1 second of simulation time with 10 "snap shots" of data in between.
-      - c. Max Iterations / Time Step - 40
+    - Type - Fixed
+    - Parameters
+      - Number of Time Steps - 10
+      - Time Step Size(s) - 0.1
+        - Note: a x b = total time, so 10 x 0.1 =  1 second of simulation time with 10 "snap shots" of data in between.
+      - Max Iterations / Time Step - 40
   - ###### Solution Processing
-    - 1. Statistics
-      - a. Checkmark "Data Sampling for Time Statistics"
-      - b. Sampling Interval - 1
-    - 2. Data File Quantities
-      - a. Under additional quantities you can select additional quantities to track in your simulation. An example would be “Mean Wall Shear Stress” to track the accumulating average of WSS on all surfaces of your model.
+    - Statistics
+      - Checkmark "Data Sampling for Time Statistics"
+      - Sampling Interval - 1
+    - Data File Quantities
+      - Under additional quantities you can select additional quantities to track in your simulation. An example would be “Mean Wall Shear Stress” to track the accumulating average of WSS on all surfaces of your model.
 
 {% include figure.html image="\assets\imgs\Fluent_Tut\Slide30.jpg" caption="" width="800" height="360" %}
 
@@ -328,3 +326,88 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 
 ---------------------------------------------------------------------------
 
+## Post-Processing
+
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide37.jpg" caption="" width="800" height="360" %}
+
+- ### Setting Units 
+  - ##### Edit → Options → Units → Custom
+    - You can set the units for base units here, example:
+      - Length: mm
+      - Pressure: Pa
+      - Velocity: cm/s
+    - Click Apply and OK 
+
+
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide38.jpg" caption="" width="800" height="360" %}
+
+
+- ### Wall Shear Stress
+  - ##### Create Contour
+    - Insert → Contour → Name it what you want ex: WSS
+  - ##### Contour Details
+    - Click on the Contour you just created under User Locations and Plots
+    - Set the following for Geometry 
+      - Domain: All Domains
+      - Locations: Wall
+      - Variable: Wall Shear.Trnavg (This is available if you set the statistic up properly back in setup while exporting the data)
+      - Range: Global
+      - \# of Contours: 100
+    - Set the following for Render
+      - Transparency: 0.0
+      - Lightning: Unmarked
+      - Show Contour Lines: Unmarked
+  - ##### Legend Details
+    - Select Default Legend View 1
+    - Set the following for Appearance
+      - Size: 0.8
+      - Aspect: 0.07
+      - Precision: 2 Fixed
+      - Value Ticks: 5
+
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide39.jpg" caption="" width="800" height="360" %}
+
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide41.jpg" caption="" width="800" height="360" %}
+
+- ### Velocity Plane + Streamline
+  - ##### Create Plane
+    - Insert → Location → Plane → Name it what you want ex: Plane 1
+  - ##### Edit Plane Details
+    - Click on the Plane you just created under User Locations and Plots
+    - Under Geometry set the following:
+      - Method: YZ Plane
+      - X: 950 [mm]
+  - ##### Create Contour on Plane
+    - Repeat from above but have the plotted variable be Velocity.Trnavg instead.
+  - ##### Create Streamline
+    - Insert → Streamline → Name it what you want ex: Streamline 1
+  - ##### Edit Streamline Details
+    - Click on the Streamline you just created under User Locations and Plots
+    - Under Geometry set the following:
+      - Type: Surface Streamline
+      - Surfaces: Plane 1
+      - Start From: Equally Spaces Samples
+      - \# of Points: 50
+      - Variable: Velocity
+      - Direction: Forward and Backward
+    - Under Color set the following:
+      - Mode: Constant
+      - Color: Black
+    - Click Apply to see the streamlines on top of the contour we made above.
+
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide42.jpg" caption="" width="800" height="360" %}
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide43.jpg" caption="" width="800" height="360" %}
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide44.jpg" caption="" width="800" height="360" %}
+
+- ### Exporting Images/Videos
+  - ##### File → Save Image
+    - File: This is the file path for where the image will be saved
+    - Format: PNG is preferred
+    - Use Screen Capture: Unmarked
+    - White Background: Checkmarked 
+    - Enhanced Output (Smooth Edges): Checkmarked
+    - Use Screen Size: Unmarked
+    - Width/Height: Set this to however large you want the image; a suggestion is a large square such as 1280 x 1280.
+    - Click Save to save the image to folder specified in (a)
+
+{% include figure.html image="\assets\imgs\Fluent_Tut\Slide40.jpg" caption="" width="800" height="360" %}
