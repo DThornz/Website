@@ -8,6 +8,9 @@ excerpt: "Calculators for easier simulations"
     .calc_container {
         display: flex;
         text-align: center;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
     }
 
     .Y_Est {
@@ -89,73 +92,78 @@ excerpt: "Calculators for easier simulations"
 {% include site-header.html %}
 
 
-
 <div class="calc_container">
-    <form class="Y_Est">
-        <table cellspacing="10">
-            <tbody>
-                <tr>
-                    <td colspan="3"><b>
-                            <center>First Layer Height Estimation</center>
-                        </b>
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-            <tbody>
-                <tr>
-                    <td colspan="3"><b>Input</b>
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Freestream velocity:</td>
-                    <td><input type="text" id="u_freestream" name="u_freestream" value="50.0" size="16"></td>
-                    <td>[cm/s]</td>
-                </tr>
-                <tr>
-                    <td>Density:</td>
-                    <td><input type="text" id="rho" name="rho" value="1060" size="16"></td>
-                    <td>[kg/m<sup>3</sup>]</td>
-                </tr>
-                <tr>
-                    <td>Dynamic viscosity:</td>
-                    <td><input type="text" id="mu" name="mu" value="3.3e-3" size="16"></td>
-                    <td>[kg/m-s]</td>
-                </tr>
-                <tr>
-                    <td>Boundary Layer Length:</td>
-                    <td><input type="text" id="L" name="L" value="10.0" size="16"></td>
-                    <td>[mm]</td>
-                </tr>
-                <tr>
-                    <td>Desired Y+ value:</td>
-                    <td><input type="text" id="y_plus_desired" name="y_plus_desired" value="1.0" size="16"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td colspan="3"><br></td>
-                </tr>
-                <tr>
-                    <td colspan="3"><b>Output</b>
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Reynolds number:</td>
-                    <td><input type="text" id="Re" name="Re" size="16"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Estimated wall distance:</td>
-                    <td><input type="text" id="wall_distance_estimation" name="wall_distance_estimation" size="16"></td>
-                    <td>[mm]</td>
-                </tr>
-                <tr>
-                    <td colspan="3">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td colspan="3" align="right" class="button1"><input type="button" value="Estimate Wall Distance"
-                            onclick="y_plus_estimation(this.form)"></td>
-                </tr>
-            </tbody>
+  <form class="Y_Est">
+    <table cellspacing="10">
+      <tbody>
+        <tr>
+          <td colspan="3"><b>
+              <center>First Layer Height Estimation</center>
+            </b>
+            <hr>
+          </td>
+        </tr>
+        <tr></tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td colspan="3"><b>Input</b>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td>Freestream velocity:</td>
+          <td><input type="text" id="u_freestream" name="u_freestream" value="50.0" size="16"></td>
+          <td>[cm/s]</td>
+        </tr>
+        <tr>
+          <td>Density:</td>
+          <td><input type="text" id="rho" name="rho" value="1060" size="16"></td>
+          <td>[kg/m<sup>3</sup>]</td>
+        </tr>
+        <tr>
+          <td>Dynamic viscosity:</td>
+          <td><input type="text" id="mu" name="mu" value="3.3e-3" size="16"></td>
+          <td>[kg/m-s]</td>
+        </tr>
+        <tr>
+          <td>Boundary Layer Length:</td>
+          <td><input type="text" id="L" name="L" value="10.0" size="16"></td>
+          <td>[mm]</td>
+        </tr>
+        <tr>
+          <td>Desired Y+ value:</td>
+          <td><input type="text" id="y_plus_desired" name="y_plus_desired" value="1.0" size="16"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="3"><br></td>
+        </tr>
+        <tr>
+          <td colspan="3"><b>Output</b>
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td>Reynolds number:</td>
+          <td><input type="text" id="Re" name="Re" size="16"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Estimated wall distance:</td>
+          <td><input type="text" id="wall_distance_estimation" name="wall_distance_estimation" size="16"></td>
+          <td>[mm]</td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="right" class="button1"><input type="button" value="Estimate Wall Distance" onclick="y_plus_estimation(this.form)"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+
+
+{% include site-footer.html %}
