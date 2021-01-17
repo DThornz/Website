@@ -67,7 +67,7 @@ excerpt: "Calculators for easier simulations"
             return
         }
 
-        Re = (rho * u_freestream * L) / mu
+        Re = (rho * u_freestream/100 * L/1000) / mu
         C_f = 0.026 * Math.pow(Re, -(1.0 / 7.0))
         C_f = 0.0576 * Math.pow(Re, -1.0 / 5.0)
         C_f = 0.370 * Math.pow(Math.log(Re) / Math.log(10), -2.584)
@@ -75,7 +75,7 @@ excerpt: "Calculators for easier simulations"
         tau_w = C_f * 0.5 * rho * u_freestream * u_freestream
         U_f = Math.sqrt(tau_w / rho)
 
-        wall_distance_estimation = (y_plus_desired * mu) / (U_f * rho)
+        wall_distance_estimation = 1000*(y_plus_desired * mu) / (U_f * rho)
 
         form.Re.value = Re.toFixed(3)
         form.wall_distance_estimation.value = wall_distance_estimation.toFixed(10)
@@ -110,28 +110,28 @@ excerpt: "Calculators for easier simulations"
                 </tr>
                 <tr>
                     <td>Freestream velocity:</td>
-                    <td><input type="text" id="u_freestream" name="u_freestream" value="1.0" size="16"></td>
-                    <td>[m/s]</td>
+                    <td><input type="text" id="u_freestream" name="u_freestream" value="50.0" size="16"></td>
+                    <td>[cm/s]</td>
                 </tr>
                 <tr>
                     <td>Density:</td>
-                    <td><input type="text" id="rho" name="rho" value="1.205" size="16"></td>
-                    <td>[kg/m3]</td>
+                    <td><input type="text" id="rho" name="rho" value="1060" size="16"></td>
+                    <td>[kg/m<sup>3</sup>]</td>
                 </tr>
                 <tr>
                     <td>Dynamic viscosity:</td>
-                    <td><input type="text" id="mu" name="mu" value="1.82e-5" size="16"></td>
-                    <td>[kg/ms]</td>
+                    <td><input type="text" id="mu" name="mu" value="3.3e-3" size="16"></td>
+                    <td>[kg/m-s]</td>
                 </tr>
                 <tr>
-                    <td>Boundary layer length:</td>
-                    <td><input type="text" id="L" name="L" value="1.0" size="16"></td>
-                    <td>[m]</td>
+                    <td>Boundary Layer Length:</td>
+                    <td><input type="text" id="L" name="L" value="10.0" size="16"></td>
+                    <td>[mm]</td>
                 </tr>
                 <tr>
                     <td>Desired Y+ value:</td>
                     <td><input type="text" id="y_plus_desired" name="y_plus_desired" value="1.0" size="16"></td>
-                    <td>[]</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td colspan="3"><br></td>
@@ -144,12 +144,12 @@ excerpt: "Calculators for easier simulations"
                 <tr>
                     <td>Reynolds number:</td>
                     <td><input type="text" id="Re" name="Re" size="16"></td>
-                    <td>[]</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Estimated wall distance:</td>
                     <td><input type="text" id="wall_distance_estimation" name="wall_distance_estimation" size="16"></td>
-                    <td>[m]</td>
+                    <td>[mm]</td>
                 </tr>
                 <tr>
                     <td colspan="3">&nbsp;</td>
