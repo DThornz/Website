@@ -32,8 +32,14 @@ excerpt: "Calculators for easier simulations"
     }
 
     .button1 {
-        padding-bottom: 40px;
+        display:inline-block;
+        margin:0 0.3em 0.3em 0;
+        -ms-transform: translateX(70%);
+        transform: translateX(70%);
     }
+}
+
+
 </style>
 
 <script>
