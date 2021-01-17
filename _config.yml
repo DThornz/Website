@@ -139,6 +139,8 @@ navigation_header:
   url: /about_me/
 - title: -CV-
   url: https://dthornz.github.io/CV/
+- title: -Calculators-
+  url: /calcs/
 
 navigation_footer:
 - title: Created by Asad Mirza based upon theme by David Darnes
