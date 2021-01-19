@@ -97,7 +97,6 @@ excerpt: "Calculators for easier simulations"
 
 {% include site-header.html %}
 
-
 <div class="calc_container">
   <form class="Y_Est">
     <table cellspacing="10">
