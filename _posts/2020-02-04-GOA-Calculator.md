@@ -33,7 +33,7 @@ Given an input planar image of valve (example: aortic) the code will find the ge
 
 ## How does it do it?
 
-Given a starting image there are a number of image processing steps done before a computer vision section of the code extracts the GOA regions, these are:
+Given a starting image there are a number of image processing steps  done before a computer vision section of the code extracts the GOA regions, these are:
 
 1. Image contrasting (imadjust)
 2. Image blurring (imgaussfilt)
@@ -47,11 +47,3 @@ Given a starting image there are a number of image processing steps done before 
 [Details on the mathematics and usage of each step can be found in the MATLAB documentation.](https://www.mathworks.com/help/images/)
 
 [Feel free to fork this on GitHub](https://github.com/DThornz/GOA_Calculator/fork)
-
-
-
-
-
-
-
-
