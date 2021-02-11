@@ -4,7 +4,9 @@ feature_text: |
   ## Asad Mirza
 feature_image: "https://simvascular.github.io/img/gallery/Img_Gallery_01.png"
 ---
+
 ### Hello! My name's [Asad Mirza](https://www.amirza.dev/about_me/) and I am currently working on my PhD in Biomedical Engineering at Florida International University under the direction of Dr. Sharan Ramaswamy as a member of his [CV-PEUTICS Laboratory](http://cvpeutics.fiu.edu/). 
+
 ---
 
 {% include figure.html image="\assets\imgs\Headshot 1.jpg" caption="" width="500" height="500" %}
