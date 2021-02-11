@@ -1,7 +1,6 @@
 ---
 title: 
-feature_text: |
-  ## Asad Mirza
+feature_text: Asad Mirza
 feature_image: "https://simvascular.github.io/img/gallery/Img_Gallery_01.png"
 ---
 
