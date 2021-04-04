@@ -32,10 +32,10 @@ Example data and a PowerPoint detailing how to use the script is provided as a r
 For each time step the code  iterates across all nodes and does a temporal integral from 0 to T. The formulas used are the standard TAWSS and OSI formulas:
 
 ### TAWSS
-{% include figure.html image="https://raw.githubusercontent.com/DThornz/TAWSS-and-OSI-Calculator/blob/main/TAWSS_Eq.jpg" caption="" width="500" height="500" %}
+{% include figure.html image="https://github.com/DThornz/TAWSS-and-OSI-Calculator/blob/main/TAWSS_Eq.jpg?raw=true" caption="" width="500" height="500" %}
 
 ### OSI
-{% include figure.html image="https://raw.githubusercontent.com/DThornz/TAWSS-and-OSI-Calculator/blob/main/OSI_Eq.jpg" caption="" width="500" height="500" %}
+{% include figure.html image="https://github.com/DThornz/TAWSS-and-OSI-Calculator/blob/main/OSI_Eq.jpg?raw=true" caption="" width="500" height="500" %}
 
 
 [Feel free to fork this on GitHub](https://github.com/DThornz/TAWSS-and-OSI-Calculator/fork)
